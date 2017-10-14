@@ -41,8 +41,5 @@ function valiName(){
   global $db;
   @$uname=$_REQUEST["uname"];
   $user=$db->users->findOne(["uname"=>$uname]);
-  if($user)
-    return "false";
-  else
-    return "true";
+  return $user==null?"true":"false";
 }

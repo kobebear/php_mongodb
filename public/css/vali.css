@@ -1,5 +1,5 @@
 .vali-fail{
-  color:red;
+  display:none; color:red;
 }
 .login-fail{
   background:lightyellow;
